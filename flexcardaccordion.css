@@ -1,0 +1,56 @@
+.flexcards{ /* main wrapper for cards layout */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-bottom: 1em;
+}
+
+.flexcards .profiles{ /* individual card CSS */
+    flex: 1;
+    position: relative;
+    padding: 5px;
+    max-width: 300px; /* max width of each card */
+    min-width: 240px; /* min width of each card */
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 90%;
+		cursor: pointer;
+    background: #65CCB8;
+}
+
+.flexcards .profiles h3{
+	margin: 0;
+}
+
+
+.flexcards .profiles img{
+ border-radius: 50%;
+float: left;
+margin-right: 15px;
+box-shadow: 2px 2px 5px gray;
+
+}
+
+.openprofile{ /*class added to contents of 1st demo when they are open*/
+    background: yellow;
+    box-shadow: 0 5px 5px rgba(0,0,0, .3);
+    border-bottom: 4px solid black;
+}
+
+div.details{ /* style for 1st demo expanded content */
+	margin-top: 2em;
+	line-height: 2;
+	border-top: 5px #4ba82f;
+	font-size: 110%;
+
+}
+
+div.details img{ /* style for 1st demo expanded content */
+	float: right;
+	margin: 0 0 10px 10px;
+	padding-left: 10px;
+	width: 150px;
+	height: auto;
+	border-left: 1px solid red;
+}
